@@ -2,6 +2,6 @@
 repository = "https://github.com/Julian/tree-sitter-lean"
 commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
 
-[language_servers.my-language]
+[language_servers.lean4]
 name = "Lean4 LSP"
 language = "Lean4"
