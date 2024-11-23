@@ -1,0 +1,4 @@
+name = "Lean4"
+grammar = "lean4"
+path_suffixes = ["lean4"]
+line_comments = ["-- "]

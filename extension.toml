@@ -1,0 +1,7 @@
+[grammars.lean4]
+repository = "https://github.com/Julian/tree-sitter-lean"
+commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
+
+[language_servers.my-language]
+name = "Lean4 LSP"
+language = "Lean4"
