@@ -1,5 +1,5 @@
-id = "lean4"
-name = "Lean4"
+id = "lean"
+name = "Lean"
 version = "0.0.1"
 schema_version = 1
 authors = ["Narazaki Shuji <shnarazk@protonmail.com>"]
@@ -7,9 +7,9 @@ description = "Lean4 extension"
 repository = "https://github.com/shnarazk/zed-lean4"
 
 [grammars.lean]
-repository = "https://github.com/Julian/tree-sitter-lean"
-commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
+repository = "https://github.com/shnarazk/tree-sitter-lean"
+commit = "f66b84f5ea1d0545aaa8b2a42153e4beeb33c90c"
 
 [language_servers.lean]
 name = "lean"
-language = "Lean4"
+language = "Lean"
