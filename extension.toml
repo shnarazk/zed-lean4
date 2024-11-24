@@ -6,9 +6,9 @@ authors = ["Narazaki Shuji <shnarazk@protonmail.com>"]
 description = "Lean4 extension"
 repository = "https://github.com/shnarazk/zed-lean4"
 
-[grammars.lean4]
-repository = "https://github.com/shnarazk/tree-sitter-lean4"
-commit = "bbfead3e4bac941da8019f29af2aba697773d742"
+[grammars.lean]
+repository = "https://github.com/Julian/tree-sitter-lean"
+commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
 
 [language_servers.lean]
 name = "lean"
