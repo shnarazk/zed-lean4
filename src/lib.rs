@@ -41,3 +41,5 @@ fn get_args_for_language_server() -> zed::Result<Vec<String>> {
 fn get_env_for_language_server() -> zed::Result<Vec<(String, String)>> {
     Ok(vec![])
 }
+
+zed::register_extension!(Lean4Extension);

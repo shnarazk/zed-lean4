@@ -1,7 +1,15 @@
-[grammars.lean4]
-repository = "https://github.com/Julian/tree-sitter-lean"
-commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
+id = "lean4"
+name = "Lean4"
+version = "0.0.1"
+schema_version = 1
+authors = ["Narazaki Shuji <shnarazk@protonmail.com>"]
+description = "Lean4 extension"
+repository = "https://github.com/shnarazk/zed-lean4"
 
-[language_servers.lean4]
-name = "Lean4 LSP"
+[grammars.lean4]
+repository = "https://github.com/shnarazk/tree-sitter-lean4"
+commit = "aa5bffe260b08cad6b2d8086e1684a5c3732d062"
+
+[language_servers.lean]
+name = "lean"
 language = "Lean4"
