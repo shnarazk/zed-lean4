@@ -26,16 +26,22 @@ fn get_path_to_language_server_executable(
     _lang_id: &zed::LanguageServerId,
     worktree: &zed::Worktree,
 ) -> zed::Result<String> {
-    if let Some(path) = worktree.which("lean") {
-        if std::fs::metadata(&path).map_or(false, |stat| stat.is_file()) {
-            return Ok(dbg!(path.clone()));
+    if let Ok(lsp_settings) = zed::settings::LspSettings::for_worktree("lean", worktree) {
+        if let Some(bin_settings) = lsp_settings.binary.as_ref() {
+            if let Some(path) = bin_settings.path.clone() {
+                return Ok(path);
+            }
         }
     }
-    Err("no lean".to_string())
+    // FIXME: to search lean from environment variable PATH
+    Ok(
+        "/nix/store/g9vd9n3icplchrxly35vsp7cfmkf7n14-elan-3.1.1-unstable-2024-08-02/bin/lean"
+            .to_string(),
+    )
 }
 
 fn get_args_for_language_server() -> zed::Result<Vec<String>> {
-    Ok(vec!["--server".to_string()])
+    Ok(vec!["--server".to_string(), "--memory=1024".to_string()])
 }
 
 fn get_env_for_language_server() -> zed::Result<Vec<(String, String)>> {
