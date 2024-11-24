@@ -8,7 +8,7 @@ repository = "https://github.com/shnarazk/zed-lean4"
 
 [grammars.lean4]
 repository = "https://github.com/shnarazk/tree-sitter-lean4"
-commit = "aa5bffe260b08cad6b2d8086e1684a5c3732d062"
+commit = "bbfead3e4bac941da8019f29af2aba697773d742"
 
 [language_servers.lean]
 name = "lean"
