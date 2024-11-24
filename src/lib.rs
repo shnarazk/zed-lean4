@@ -41,7 +41,8 @@ fn get_path_to_language_server_executable(
 }
 
 fn get_args_for_language_server() -> zed::Result<Vec<String>> {
-    Ok(vec!["--server".to_string(), "--memory=1024".to_string()])
+    Ok(vec!["--server".to_string()])
+    // Ok(vec!["--server".to_string(), "--memory=1024".to_string()])
 }
 
 fn get_env_for_language_server() -> zed::Result<Vec<(String, String)>> {
