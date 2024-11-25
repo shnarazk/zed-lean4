@@ -14,4 +14,4 @@ commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
 
 [language_servers.lean4]
 name = "lean LSP"
-language = "Lean"
+language = "lean4"

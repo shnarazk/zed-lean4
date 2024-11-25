@@ -23,10 +23,10 @@ impl zed::Extension for Lean4Extension {
 }
 
 fn get_path_to_language_server_executable(
-    lang_id: &zed::LanguageServerId,
+    _lang_id: &zed::LanguageServerId,
     worktree: &zed::Worktree,
 ) -> zed::Result<String> {
-    let lsp_name = lang_id.as_ref();
+    let lsp_name = "lean"; // lang_id.as_ref();
     if let Ok(lsp_settings) = zed::settings::LspSettings::for_worktree(lsp_name, worktree) {
         dbg!("LEAN4: found by LspSettings::for_worktree");
         if let Some(bin_settings) = lsp_settings.binary.as_ref() {
@@ -36,15 +36,13 @@ fn get_path_to_language_server_executable(
         }
     }
     if let Some(lsp_path) = worktree.which(lsp_name) {
-        dbg!("LEAN4: found by by worktree.which");
         return Ok(lsp_path);
     }
-    Err("LEAN4: not found")
-    // FIXME: to search lean from environment variable PATH
-    // Ok(
-    //     "/nix/store/g9vd9n3icplchrxly35vsp7cfmkf7n14-elan-3.1.1-unstable-2024-08-02/bin/lean"
-    //         .to_string(),
-    // )
+    // Err("LEAN4: not found".to_string())
+    Ok(
+        "/nix/store/g9vd9n3icplchrxly35vsp7cfmkf7n14-elan-3.1.1-unstable-2024-08-02/bin/lean"
+            .to_string(),
+    )
 }
 
 fn get_args_for_language_server() -> zed::Result<Vec<String>> {
