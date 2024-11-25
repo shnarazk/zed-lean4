@@ -28,7 +28,6 @@ fn get_path_to_language_server_executable(
 ) -> zed::Result<String> {
     let lsp_name = lang_id.as_ref();
     if let Ok(lsp_settings) = zed::settings::LspSettings::for_worktree(lsp_name, worktree) {
-        dbg!("LEAN4: found by LspSettings::for_worktree");
         if let Some(bin_settings) = lsp_settings.binary.as_ref() {
             if let Some(path) = bin_settings.path.clone() {
                 return Ok(path);
@@ -38,11 +37,7 @@ fn get_path_to_language_server_executable(
     if let Some(lsp_path) = worktree.which(lsp_name) {
         return Ok(lsp_path);
     }
-    // Err("LEAN4: not found".to_string())
-    Ok(
-        "/nix/store/g9vd9n3icplchrxly35vsp7cfmkf7n14-elan-3.1.1-unstable-2024-08-02/bin/lean"
-            .to_string(),
-    )
+    Err(format!("{lsp_name} is not found").to_string())
 }
 
 fn get_args_for_language_server() -> zed::Result<Vec<String>> {
