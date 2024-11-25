@@ -1,8 +1,8 @@
 id = "lean4"
 name = "Lean4"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
-authors = ["Narazaki Shuji <shnarazk@protonmail.com>"]
+authors = ["Narazaki, Shuji <shnarazk@protonmail.com>"]
 description = "Lean4 extension"
 repository = "https://github.com/shnarazk/zed-lean4"
 
@@ -12,6 +12,6 @@ repository = "https://github.com/shnarazk/zed-lean4"
 repository = "https://github.com/Julian/tree-sitter-lean"
 commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
 
-[language_servers.lean4]
+[language_servers.lean]
 name = "lean LSP"
 language = "lean4"
