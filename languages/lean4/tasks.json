@@ -1,0 +1,20 @@
+[
+  {
+    "label": "lake build",
+    "command": "lake",
+    "args": ["build"],
+    "tags": ["lake-build"]
+  },
+  {
+    "label": "lake exe",
+    "command": "lake",
+    "args": ["exe"],
+    "tags": ["lake-exe"]
+  },
+  {
+    "label": "lake exe $ZED_STEM",
+    "command": "lake",
+    "args": ["exe", "ZED_STEM"],
+    "tags": ["lake-exe-task"]
+  },
+]
