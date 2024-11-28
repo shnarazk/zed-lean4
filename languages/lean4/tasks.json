@@ -3,18 +3,33 @@
     "label": "lake build",
     "command": "lake",
     "args": ["build"],
-    "tags": ["lake-build"]
+    // "env": { },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": "system"
   },
   {
-    "label": "lake exe",
+    "label": "lake lint",
     "command": "lake",
-    "args": ["exe"],
-    "tags": ["lake-exe"]
+    "args": ["lint"],
+    // "env": { },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": "system"
   },
   {
-    "label": "lake exe $ZED_STEM",
+    "label": "lake test",
     "command": "lake",
-    "args": ["exe", "ZED_STEM"],
-    "tags": ["lake-exe-task"]
+    "args": ["test"],
+    // "env": { },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": "system"
   },
 ]
