@@ -1,6 +1,6 @@
 id = "lean4"
 name = "Lean4"
-version = "0.0.2"
+version = "0.1.0"
 schema_version = 1
 authors = ["Narazaki, Shuji <shnarazk@protonmail.com>"]
 description = "Lean4 extension"
