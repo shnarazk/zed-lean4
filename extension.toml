@@ -1,6 +1,6 @@
 id = "lean4"
 name = "Lean4"
-version = "0.1.0"
+version = "0.1.1"
 schema_version = 1
 authors = ["Narazaki, Shuji <shnarazk@protonmail.com>"]
 description = "Lean4 extension"
@@ -14,4 +14,4 @@ commit = "1d230008e22b9f506cf4a4012e2b46debfe30243"
 
 [language_servers.lean]
 name = "lean LSP"
-language = "lean4"
+language = "Lean4"
