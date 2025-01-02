@@ -5,8 +5,8 @@
 
 ## How to type unicode symbols in
 
-- Use simple-completion extension
-- Use snippet (CONFIG/snippets/lean4.json) like this:
+- Use simple-completion extension (But I don't know how to configure it)
+- Use snippet (CONFIG/snippets/lean4.json) like this (But a newline is inserted after completion):
 
 ```json
 {
