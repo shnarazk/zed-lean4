@@ -5,6 +5,7 @@
 
 ## How to type unicode symbols in
 
+- Use a latex_commands-to-unicode_symbols converter like [lucr](https://github.com/shnarazk/lucr)
 - Use simple-completion extension (But I don't know how to configure it)
 - Use snippet (CONFIG/snippets/lean4.json) like this (But a newline is inserted after completion):
 
