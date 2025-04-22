@@ -6,8 +6,21 @@
 
 ## What is this extension?
 
-This extension provides minimal programming aids like syntax highlights, fold, hovered symbol description and so on via lsp and tree-sitter.
-You can't use Zed to proof something since there is no 'info window' to show proof diagram. 
+This extension provides:
+
+- (imcomplete) syntax highlight
+- code folding
+- hovered symbol description
+- task definitions
+
+via lsp and [tree-sitter-lean](https://github.com/Julian/tree-sitter-lean).
+
+And does not:
+
+- InfoView
+- builtin unicode symbol picker
+
+So it's difficult to use Zed to write proofs for now.
 
 ## How to type Unicode symbols in
 
