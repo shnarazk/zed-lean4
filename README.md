@@ -72,19 +72,3 @@ So it's difficult to use Zed to write proofs for now.
   }
 }
 ```
-
-## configuration for lean-tui
-
-Set lsp in config.json as follows:
-
-```json
-  ...
-  "lsp": {
-    "lean": {
-      "binary": {
-        "path": "lean-tui",
-        "arguments": ["proxy"],
-      },
-    },
-    ...
-```
