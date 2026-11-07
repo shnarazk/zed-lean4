@@ -20,4 +20,4 @@
   (anon_ctor)
   (list_lit)
   (paren)
-] @indent.begin
+] @indent
